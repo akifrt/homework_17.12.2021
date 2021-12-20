@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./assets/style.css">
+  <title>Info</title>
+</head>
+<body>
+  
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Name*</label>
+						
+						<label class="validation-error hide" id="NameValidationError">This field is required.</label>
+						
+						<input type="text" name="Name" id="Name">
+                    </div>
+                    <div>
+                        <label>Surname</label>
+                        <input type="text" name="Surname" id="Surname">
+                    </div>
+                    <div>
+                        <label>Salary</label>
+                        <input type="number" name="salary" id="salary">
+                    </div>
+
+                    <div class="input-Photo">
+                     <label>Photo</label>
+                     <input type="file" name="Photo" id="Photo" accept="image/jpeg" >   
+                    </div>
+                    
+
+
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Surname</th>
+                            <th>Salary</th>
+                            <th>Photo</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+<script src="./js/index.js"></script>
+</body>
+</html>
